@@ -149,6 +149,13 @@ IGNORED_OPTIONS_GCC = [
     # quality of analysis.
     '-DNDEBUG$',
 
+    # Unsupported xtensa-esp32-elf options
+    '-mlongcalls',
+    '-fstrict-volatile-bitfields',
+    '-mfix-esp32-psram-cache-issue',
+    '-mfix-esp32-psram-cache-strategy=memw',
+    '-freorder-blocks',
+
     # --- IGNORED --- #
     '-save-temps',
     # Clang gives different warnings than GCC. Thus if these flags are kept,
